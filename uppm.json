@@ -12,7 +12,7 @@
         "interaapps\/jsonplus": "1.0.6"
     },
     "namespaceBindings": {
-        "de\\interaapps\\ulole\\httpclient": "src\/main\/de\/interaapps\/ulole\/module"
+        "de\\interaapps\\ulole\\httpclient": "src\/main\/de\/interaapps\/ulole\/httpclient"
     },
     "initScripts": []
 }
