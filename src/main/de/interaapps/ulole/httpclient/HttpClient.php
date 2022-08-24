@@ -13,17 +13,18 @@ class HttpClient {
     public static JSONPlus $jsonPlusDefault;
 
     private HttpAdapter $adapter;
-    private string $baseUrl = "";
     public JSONPlus $jsonPlus;
 
-    public function __construct() {
+    public function __construct(
+        private string $baseUrl = ""
+    ) {
     }
 
     public function request(string $method, string $url): HttpRequest {
         $this->adapter = HttpClient::$adapterDefault;
         $this->jsonPlus = HttpClient::$jsonPlusDefault;
 
-        $req = new HttpRequest($this, $this->baseUrl . $method, $url);
+        $req = new HttpRequest($this, $method, $this->baseUrl . $url);
         $req->headers($this->headers);
         $req->queries($this->queryParameters);
         $req->timeout($this->timeout);
