@@ -1,0 +1,18 @@
+{
+    "name": "interaapps\/ulole-http-client",
+    "version": "1.0.0",
+    "phpVersion": "8.0",
+    "repositories": [],
+    "run": {
+        "test": "src\/test\/testbootstrap.php"
+    },
+    "build": {},
+    "serve": {},
+    "modules": {
+        "interaapps\/jsonplus": "1.0.6"
+    },
+    "namespaceBindings": {
+        "de\\interaapps\\ulole\\httpclient": "src\/main\/de\/interaapps\/ulole\/module"
+    },
+    "initScripts": []
+}
